@@ -3,18 +3,54 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
+    "server": "nodemon server.js",
     "start": "next start",
+    "watch:sass": "sass --watch sass/main.scss styles/App.css",
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "@svgr/webpack": "^5.5.0",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "coinmarketcap-api": "^3.1.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "cryptocurrency-icons": "^0.18.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.4.0",
+    "framer-motion": "^6.3.16",
+    "gsap": "^3.10.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.2",
+    "morgan": "^1.10.0",
     "next": "12.2.0",
+    "next-crypto-icons": "^0.1.0",
+    "next-videos": "^1.4.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-crypto-icons": "^1.0.5",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-intersection-observer": "^9.3.5",
+    "react-whirligig": "^6.6.15",
+    "styled-components": "^5.3.5",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
   },
   "devDependencies": {
+    "concurrently": "^7.2.2",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0"
   }
 }

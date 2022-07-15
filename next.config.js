@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withVideos = require("next-videos");
 
-module.exports = nextConfig
+const nextConfig = {
+   reactStrictMode: true,
+   experimental: {
+      esmExternals: true,
+      legacyBrowsers: false
+   }
+   // useFileSystemPublicRoutes: false,
+};
+
+module.exports = withVideos(nextConfig);
+// module.exports = nextConfig;
